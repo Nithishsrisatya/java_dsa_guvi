@@ -1,21 +1,27 @@
 package day4;
 import java.util.*;
 public class SumOfSeries {
-	static int calculation(int N, int M) {
-		int result=0;
-		for(int i = 0;i<=N;i++) {
-			 
+	private int termValue;
+	private int numberOfTerms;
+	private long sumOfSeries;
+	
+	public void findSumOfSeries() {
+		for(int i = 1; i <= numberOfTerms; i++) {
+			sumOfSeries = sumOfSeries + (long) (Math.pow(termValue, i-1) * Math.pow(-1, i-1)); 
 		}
-		return result;
 	}
+	
 	public static void main(String[] args) {
+		SeriesSum obj = new SeriesSum();
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter the Value of N: ");
-		int N = scanner.nextInt();
-		System.out.print("\nEnter the No.of Terms M: ");
-		int M = scanner.nextInt();
-		int result = calculation(N, M);
-		System.out.println("Sum of the Series: "+result);
-		scanner.close();
+		System.out.print("Enter the term value: ");
+		obj.termValue = scanner.nextInt();
+		System.out.print("Enter number of terms of the series : ");
+		obj.numberOfTerms = scanner.nextInt();
+		if( (obj.termValue >= 0 && obj.termValue <= 5) && (obj.numberOfTerms >= 1 && obj.numberOfTerms <= 25) ) {
+			obj.findSumOfSeries();
+			System.out.println("Sum of the series is " + obj.sumOfSeries);
+		}
+		scanner.close();			
 	}
 }
