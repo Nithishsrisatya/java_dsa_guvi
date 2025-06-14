@@ -12,7 +12,7 @@ public class SumOfSeries {
 	}
 	
 	public static void main(String[] args) {
-		SeriesSum obj = new SeriesSum();
+		SumOfSeries obj = new SumOfSeries();
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Enter the term value: ");
 		obj.termValue = scanner.nextInt();
