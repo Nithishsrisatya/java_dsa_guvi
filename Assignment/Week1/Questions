@@ -6,3 +6,20 @@
 6. Advantages of OOPL
 7. Disadvantages of C++
 8. Solutions given by Java to overcome problems of C++
+
+Programs:
+1. Find 2nd smallest/biggest digit in a number.
+2. Find sum of Odd placed Even Digits in a number. 
+Note: You can make other 3 combinations for the above program.
+3. Find smallest/biggest digit in a number.
+4. Find sum of 1st and last digits in a number.
+5. Find nth placed digit in a number.
+6. Count number of Prime digits in a number.
+7. Count number of composite digits in a number.
+-----------------------------------------------------------
+1. Write a program to print Right angled Triangle of N lines.
+2. Write a program to print Square of N lines.
+3. Write a program to print Hollow Square of N lines.
+4. Write a program to print X shape of N lines.
+5. Write a program to print X shape inside a hollow square of N lines.
+6. Write a program to print Hollow Benzene Ring of N lines.
