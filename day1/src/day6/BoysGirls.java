@@ -21,6 +21,8 @@ class Problem{
 		this.no_ofGirls = no_ofGirls;
 	}
 	public static String checkArrangement(int[] b, int[] g) {
+		Arrays.sort(b);
+		Arrays.sort(g);
         if (canAlternate(b, g) || canAlternate(g, b)) {
             return "YES";
         } else {
@@ -45,9 +47,9 @@ class Problem{
 }
 public class BoysGirls {
 	public static String[] readData(int T) {
+		Scanner scanner = new Scanner(System.in);
 		String[] result = new String[T];
 		for(int i = 0;i < T;i++) {
-			Scanner scanner = new Scanner(System.in);
 			System.out.println("Enter the size of array: ");
 			int n = scanner.nextInt();
 			System.out.println("Enter the  No.of the boys: " + n);
@@ -62,14 +64,12 @@ public class BoysGirls {
 			for(int k = 0;k < n;k++) {
 				girlsHeight[k] = scanner.nextInt();
 			}
-			Arrays.sort(boysHeight);
-			Arrays.sort(girlsHeight);
 			Problem p1 = new Problem();
 			p1.setNo_ofBoys(n);
 			p1.setNo_ofGirls(n);
 			result[i] =  Problem.checkArrangement(boysHeight, girlsHeight);
-			scanner.close();
 		}
+		scanner.close();
 		return result;
 	}
 	public static void main(String[] args) {
@@ -77,7 +77,9 @@ public class BoysGirls {
 		System.out.println("Enter the No.of Test Cases: ");
 		int T = scanner.nextInt();
 		String[] output = readData(T);
-		System.out.println(output);
+		for(String o : output) {
+			System.out.println(o);
+		}
 		scanner.close();
 	}
 }
