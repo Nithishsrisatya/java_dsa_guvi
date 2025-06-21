@@ -9,7 +9,6 @@ class Person1 {
 	private  String name;
 	public Person1() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Person1(int id, String name) {
 		super();
