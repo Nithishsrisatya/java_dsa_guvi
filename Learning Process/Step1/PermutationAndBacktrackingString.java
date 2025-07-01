@@ -114,26 +114,33 @@ dbca
 dcab
 dcba
  */
-public class PerimutationAndBacktrackingaString {
-    public static void permute(String str, String ans) {
-        if (str.length() == 0) {
+import java.util.Arrays;
+ 
+public class PermutationAndBacktrackingString {
+    public static void permute(String str, String ans, boolean[] used) {
+        if (ans.length() == str.length()) {
             System.out.println(ans);
             return;
         }
-        
-        boolean[] visited = new boolean[26]; // To track visited characters
+ 
         for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (!visited[ch - 'a']) { // Check if character is already used
-                visited[ch - 'a'] = true; // Mark character as used
-                String ros = str.substring(0, i) + str.substring(i + 1); // Remaining string
-                permute(ros, ans + ch); // Recur with remaining string and current character added to answer
-            }
+            // Skip already used characters
+            if (used[i]) continue;
+ 
+            // Skip duplicates unless it's the first occurrence or previous duplicate was used
+            if (i > 0 && str.charAt(i) == str.charAt(i - 1) && !used[i - 1]) continue;
+ 
+            used[i] = true;
+            permute(str, ans + str.charAt(i), used);
+            used[i] = false; // Backtrack
         }
     }
-
+ 
     public static void main(String[] args) {
-        String input = "abc"; // Example input
-        permute(input, "");
+        String input = "aab";
+        char[] chars = input.toCharArray();
+        Arrays.sort(chars); // Ensure lexicographical order
+        boolean[] used = new boolean[chars.length];
+        permute(new String(chars), "", used);
     }
 }
