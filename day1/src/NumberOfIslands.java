@@ -87,17 +87,61 @@ Output:
  */
 import java.util.*;
 public class NumberOfIslands {
+    static int rows;
+    static int col;
+    static char[][] arr;
+    static boolean[][] visited;
     public static void main(String[] args){
         Scanner obj = new Scanner(System.in);
-        int rows = obj.nextInt();
-        int col = obj.nextInt();
-        int[][] arr = new int[rows][col];
-        for(int i = 0;i < rows;i++){
-            for(int j = 0;j < col;j++){
-                arr[i][j] = obj.nextInt();
+
+        rows = obj.nextInt();
+        col = obj.nextInt();
+        arr = new char[rows][col];
+        obj.nextLine(); 
+        for(int i=0;i < rows;i++){
+            String line = obj.nextLine();
+            for(int j=0;j < col;j++){
+                arr[i][j] = line.charAt(j);
             }
         }
-
+        
+        visited = new boolean[rows][col];
+        for(int i = 0;i < rows;i++){
+            for(int j = 0;j < col;j++){
+                visited[i][j] = false;
+            }
+        }
+        int result = numberIslands();
+        System.out.println(result);
         obj.close();
+    }
+    static int numberIslands(){
+        if(arr == null || rows == 0 || col == 0){
+            return 0;
+        }
+        if(rows == 1 && col == 1){
+            return arr[0][0] == '1' ? 1 : 0;
+        }
+
+        int count = 0;
+        for(int i = 0;i < rows;i++){
+            for(int j = 0;j < col;j++){
+                if(arr[i][j] == '1' & !visited[i][j]){
+                    count++;
+                    dfs(i,j);
+                }
+            }
+        }
+        return count;
+    }
+    static void dfs(int i, int j){
+        if(i < 0 || i >= rows || j < 0 || j >= col || arr[i][j] != '1' || visited[i][j]){
+            return;
+        }
+        visited[i][j] = true;
+        dfs(i - 1,j);
+        dfs(i + 1,j);
+        dfs(i,j - 1);
+        dfs(i,j + 1);
     }
 }
