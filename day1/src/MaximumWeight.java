@@ -82,20 +82,29 @@ Output:
  */
 import java.util.*;
 public class MaximumWeight {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); 
-        int w = sc.nextInt(); 
-        int[] values = new int[n]; 
-        int[] weights = new int[n]; 
-        for(int i = 0; i < n; i++) {
-            values[i] = sc.nextInt();
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int n = obj.nextInt();
+        int k = obj.nextInt();
+        int[] values = new int[n];
+        int[] weights = new int[n];
+        for (int i = 0; i < n; i++) {
+            values[i] = obj.nextInt();
         }
-        for(int i = 0; i < n; i++) {
-            weights[i] = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            weights[i] = obj.nextInt();
         }
-        
-        sc.close();
+        int[][] dp = new int[n + 1][k + 1];
+        for (int i = 1; i <= n; i++) {
+            for (int w = 1; w <= k; w++) {
+                if (weights[i - 1] <= w) {
+                    dp[i][w] = Math.max(dp[i - 1][w], values[i - 1] + dp[i - 1][w - weights[i - 1]]);
+                } else {
+                    dp[i][w] = dp[i - 1][w];
+                }
+            }
+        }
+        System.out.println(dp[n][k]);
+        obj.close();
     }
-    
 }

@@ -1,0 +1,114 @@
+Awesome! Here's a **complete training set for Step 3: Loop-Based Problem Solving (O(n))** — everything you need to **master loops**, all structured from basic to moderate logic level.
+
+---
+
+## ✅ **🔥 Step 3 Master Training Set — Loop-Based O(n) Problems**
+
+Each problem below runs in **linear time (O(n))**, and practices different **loop skills**.
+
+---
+
+### 🟢 **Category A: Number Looping**
+
+1. **Sum of First N Natural Numbers**
+   ➤ Input: `n` → Output: `sum = 1 + 2 + ... + n`
+
+2. **Print All Numbers from 1 to N**
+
+3. **Factorial of N**
+   ➤ Input: `n = 5` → Output: `120`
+
+4. **Power of a Number (a^b)**
+   ➤ Input: `a = 2, b = 5` → Output: `32`
+
+5. **Print All Even and Odd Numbers from 1 to N**
+
+---
+
+### 🔵 **Category B: Digit Problems (One number, digit-wise processing)**
+
+6. **Count Number of Digits**
+   ➤ Input: `12345` → Output: `5`
+
+7. **Sum of Digits**
+   ➤ Input: `345` → Output: `12`
+
+8. **Reverse the Number**
+   ➤ Input: `1234` → Output: `4321`
+
+9. **Check Palindrome (e.g., 121, 1331)**
+   ➤ Input: `131` → Output: `Yes`
+
+10. **Count Even and Odd Digits in a Number**
+    ➤ Input: `54813` → Output: `Even: 2, Odd: 3`
+
+11. **Check Armstrong Number**
+    ➤ `153 = 1³ + 5³ + 3³` → Output: `Yes`
+
+---
+
+### 🟡 **Category C: Series and Math Logic**
+
+12. **Fibonacci Series up to N terms**
+    ➤ Input: `n = 7` → Output: `0 1 1 2 3 5 8`
+
+13. **Check Prime Number**
+    ➤ Input: `n = 13` → Output: `Prime`
+
+14. **Print All Prime Numbers up to N**
+
+15. **Find GCD (HCF) of Two Numbers**
+
+16. **Find LCM of Two Numbers**
+
+17. **Print Multiplication Table of N**
+
+---
+
+### 🟠 **Category D: Character/String-Based with Loops**
+
+18. **Count Vowels and Consonants in a Word**
+
+19. **Convert Uppercase Letters to Lowercase (manually)**
+
+20. **Check if a Word is a Palindrome (e.g., "madam")**
+
+21. **Count Frequency of a Given Character in a String**
+
+22. **Reverse a String using Loop**
+
+---
+
+### 🟣 **Category E: Logic-Based Applications**
+
+23. **ATM Cash Denomination**
+    ➤ Input: `amount = 2860` → Output:
+
+```
+500 x 5  
+100 x 3  
+50 x 1  
+10 x 1
+```
+
+24. **Decimal to Binary Conversion using Loop**
+
+25. **Find the Sum of First N Odd Numbers**
+
+26. **Find the Sum of First N Even Numbers**
+
+27. **Check if a Number is a Strong Number**
+    ➤ e.g., `145 = 1! + 4! + 5!`
+
+28. **Find the Product of Digits of a Number**
+
+---
+
+### 🧠 Bonus: Mixed Logic Challenges
+
+29. **Find the Second Largest Digit in a Number**
+
+30. **Sum of Digits Until Single Digit Remains**
+    ➤ Input: `9875 → 9+8+7+5 = 29 → 2+9 = 11 → 1+1 = 2`
+
+---
