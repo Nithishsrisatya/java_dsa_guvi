@@ -1,0 +1,209 @@
+Awesome! Let’s level up to **👉 Step 4: O(n²) Problem Solving with Nested Loops** — this step is critical for building logic-heavy programs like pattern printing, pair comparisons, and brute-force algorithms.
+
+---
+
+## ✅ **Step 4: Nested Loops — O(n²) Problem Solving**
+
+### 🔄 **Nested Loop = Loop inside another loop**
+
+Most problems here involve **2 dimensions** or **all pair combinations**.
+
+---
+
+### 🔹 **Skill You Will Gain**
+
+| Skill                  | Used For                                |
+| ---------------------- | --------------------------------------- |
+| Loop inside loop       | Grids, patterns, comparisons            |
+| i vs j logic           | Matrix problems                         |
+| Breaking down 2D logic | Tables, matches, nested decisions       |
+| Brute force logic      | Comparing each element with every other |
+
+---
+
+## 🟢 **Category A: Pattern Printing (Super Important)**
+
+### 🔸 Q1. Square of Stars (n x n)
+
+```
+Input: n = 4
+Output:
+****
+****
+****
+****
+```
+
+---
+
+### 🔸 Q2. Right-Angled Triangle
+
+```
+Input: n = 5
+Output:
+*
+**
+***
+****
+*****
+```
+
+---
+
+### 🔸 Q3. Inverted Triangle
+
+```
+*****
+****
+***
+**
+*
+```
+
+---
+
+### 🔸 Q4. Number Pyramid
+
+```
+1
+12
+123
+1234
+12345
+```
+
+---
+
+### 🔸 Q5. Star Pyramid
+
+```
+    *
+   ***
+  *****
+ *******
+*********
+```
+
+> Use space loop + star loop (2i – 1 stars)
+
+---
+
+### 🔸 Q6. Floyd’s Triangle
+
+```
+1
+2 3
+4 5 6
+7 8 9 10
+```
+
+---
+
+### 🔸 Q7. Pascal’s Triangle
+
+```
+1
+1 1
+1 2 1
+1 3 3 1
+```
+
+---
+
+## 🔵 **Category B: 2D Arrays / Grids / Matrices**
+
+### 🔸 Q8. Print a 2D Matrix
+
+```
+Input: 3x3
+Output:
+1 2 3
+4 5 6
+7 8 9
+```
+
+---
+
+### 🔸 Q9. Transpose of a Matrix
+
+---
+
+### 🔸 Q10. Matrix Addition / Multiplication
+
+---
+
+## 🔴 **Category C: All-Pair Comparisons (Brute-Force)**
+
+### 🔸 Q11. Count Pairs in Array with Given Sum
+
+e.g., arr = \[1, 3, 2, 2], target = 4
+Output: `(1, 3), (2, 2)`
+
+---
+
+### 🔸 Q12. Print All Pairs in an Array
+
+Input: `[a, b, c]`
+Output: `(a, b), (a, c), (b, c)`
+
+---
+
+### 🔸 Q13. Check for Duplicates (Brute-force method)
+
+Nested loop to check if any `arr[i] == arr[j]`
+
+---
+
+### 🔸 Q14. Bubble Sort (Classic O(n²))
+
+Sort using nested loop with swaps
+
+---
+
+### 🔸 Q15. Selection Sort
+
+---
+
+## 🟡 **Category D: Mixed Grid Problems**
+
+### 🔸 Q16. Print Multiplication Table (Matrix style)
+
+```
+1  2  3
+2  4  6
+3  6  9
+```
+
+---
+
+### 🔸 Q17. Count Number of 1s in 2D Binary Matrix
+
+---
+
+### 🔸 Q18. Find Largest Element in Each Row
+
+---
+
+### 🔸 Q19. Sum of Diagonal Elements (Left and Right diagonals)
+
+---
+
+### 🔸 Q20. Checkerboard Pattern
+
+```
+# #
+ # 
+# #
+```
+
+---
+
+### ✅ Tracker Table (Optional for Progress)
+
+| Problem No. | Done | Notes |
+| ----------- | ---- | ----- |
+| 1           |      |       |
+| 2           |      |       |
+| ...         |      |       |
+
+---
