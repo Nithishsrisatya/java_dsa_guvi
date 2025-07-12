@@ -1,0 +1,183 @@
+Awesome! You're now entering one of the most critical and useful phases of coding — **Step 5: O(n) Problem Solving on Arrays and Strings**.
+This will build the foundation for **DSA, interviews, and real-world logic**.
+
+---
+
+## ✅ **Step 5: O(n) Problems on Arrays & Strings**
+
+In this step, you’ll master how to:
+
+* Traverse arrays and strings
+* Track frequencies, max/min
+* Manipulate character and word-level data
+* Solve linear-time problems using a single loop
+
+---
+
+### 🔹 **What You’ll Learn**
+
+| Concept               | Why It’s Useful                          |
+| --------------------- | ---------------------------------------- |
+| Array traversal       | Basic structure for DSA                  |
+| String iteration      | Validation, formatting, analysis         |
+| Frequency count       | Used in maps, counting problems          |
+| Sliding window basics | Efficient substring/array checks         |
+| Two-pointer concept   | Optimized traversal (optional in Step 5) |
+
+---
+
+## 🟢 **Array-Based Problems (O(n))**
+
+---
+
+### 🔸 Q1. Find Maximum and Minimum Element
+
+Input: `[5, 2, 9, 1, 6]` → Output: `Max = 9, Min = 1`
+
+---
+
+### 🔸 Q2. Calculate Sum and Average of Array
+
+Input: `[2, 4, 6, 8]` → Output: `Sum = 20, Avg = 5.0`
+
+---
+
+### 🔸 Q3. Count Even and Odd Elements
+
+Input: `[1, 2, 3, 4]` → Output: `Even = 2, Odd = 2`
+
+---
+
+### 🔸 Q4. Search for an Element (Linear Search)
+
+Input: `[3, 5, 7], Search = 5` → Output: `Found at index 1`
+
+---
+
+### 🔸 Q5. Reverse an Array (in-place)
+
+Input: `[1, 2, 3]` → Output: `[3, 2, 1]`
+
+---
+
+### 🔸 Q6. Remove Duplicates from Array (preserve first occurrences)
+
+---
+
+### 🔸 Q7. Find Second Largest Element
+
+Input: `[5, 3, 9, 1]` → Output: `Second Largest = 5`
+
+---
+
+### 🔸 Q8. Left Rotate the Array by 1
+
+Input: `[1, 2, 3]` → Output: `[2, 3, 1]`
+---
+
+### 🔸 Q9. Check if Array is Sorted (Ascending)
+
+---
+
+### 🔸 Q10. Find the Frequency of Each Element
+
+Input: `[2, 3, 2, 4, 3]`
+Output:
+
+```
+2 → 2 times  
+3 → 2 times  
+4 → 1 time
+```
+
+---
+
+## 🔵 **String-Based Problems (O(n))**
+
+---
+
+### 🔸 Q11. Count Vowels and Consonants
+
+Input: `"hello"` → Output: `V = 2, C = 3`
+
+---
+
+### 🔸 Q12. Convert to Uppercase / Lowercase (manually)
+
+---
+
+### 🔸 Q13. Check for Palindrome String
+
+Input: `"madam"` → Output: `Palindrome = true`
+
+---
+
+### 🔸 Q14. Count Frequency of Characters
+
+Input: `"apple"` → Output:
+
+```
+a: 1  
+p: 2  
+l: 1  
+e: 1
+```
+
+---
+
+### 🔸 Q15. Remove Spaces from a String
+
+Input: `"I am Nithish"` → Output: `"IamNithish"`
+
+---
+
+### 🔸 Q16. Reverse a String (manual)
+
+---
+
+### 🔸 Q17. Count Words in a Sentence
+
+Input: `"Hi there, I’m Nithish"` → Output: `4`
+
+---
+
+### 🔸 Q18. Find the Longest Word in a Sentence
+
+---
+
+### 🔸 Q19. Replace All Occurrences of a Character
+
+Input: `"banana", replace a → x` → Output: `"bxnxnx"`
+
+---
+
+### 🔸 Q20. Count Digits, Letters, Special Characters
+
+Input: `"abc@123!"`
+Output:
+
+```
+Letters: 3  
+Digits: 3  
+Special: 2
+```
+
+---
+
+## 🧠 Optional: Advanced Thinking
+
+* Use frequency array or hash map
+* Use string builder / join for clean output
+* Compare strings char-by-char
+* Two-pointer tricks for removing duplicates
+
+---
+
+## ✅ Want a Tracker Like This?
+
+| Problem No. | Type   | Done | Notes |
+| ----------- | ------ | ---- | ----- |
+| 1           | Array  |      |       |
+| 11          | String |      |       |
+
+---

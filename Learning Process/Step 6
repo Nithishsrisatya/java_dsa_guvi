@@ -1,0 +1,56 @@
+Great! Welcome to **Step 6: Implementing String Handling Methods** — this step teaches you how to **manually build string functions** without using built-in methods like `.length`, `.reverse()`, or `.toUpperCase()`.
+
+---
+
+## ✅ **Step 6: String Handling Method Implementations**
+
+### 🎯 **Goal**: Understand how built-in string methods work *internally*, and sharpen your logic building skills.
+
+---
+
+### 🔹 **Core Skills You’ll Practice**
+
+| Method Name                    | What You'll Implement                           |
+| ------------------------------ | ----------------------------------------------- |
+| `length()`                     | Count characters manually                       |
+| `toLowerCase()`                | Convert all uppercase to lowercase              |
+| `toUpperCase()`                | Convert all lowercase to uppercase              |
+| `reverse()`                    | Reverse the string using a loop                 |
+| `compare()`                    | Compare two strings (character by character)    |
+| `isPalindrome()`               | Check if string reads the same forward/backward |
+| `substring(start, end)`        | Extract part of the string manually             |
+| `trim()`                       | Remove leading and trailing spaces              |
+| `charAt(index)`                | Return character at a specific index            |
+| `replaceAll(oldChar, newChar)` | Replace every occurrence of a character         |
+
+---
+
+### 🔧 **Rules**
+
+* **No built-in string methods** (except `charAt` if allowed in your language).
+* Use `for`, `while`, and arrays/char arrays.
+* Optional: Write reusable functions like `myLength(str)`, `myReverse(str)`, etc.
+
+---
+
+### 📌 Example Template:
+
+```js
+function myLength(str) {
+  let count = 0;
+  while (str[count] !== undefined) {
+    count++;
+  }
+  return count;
+}
+```
+
+---
+
+Once you're ready, you can:
+
+* Start building these one by one
+* Ask for code review
+* Or move to **Step 7: Linked List Problems** next
+
+Ready to dive in or need a starter example? 💻✅
