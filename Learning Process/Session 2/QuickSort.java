@@ -11,6 +11,10 @@ public class QuickSort {
                 arr[j] = temp;
             }
         }
+        for(int num: arr){
+            System.out.print(num + "   ");
+        }
+        System.out.println();
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
@@ -19,6 +23,7 @@ public class QuickSort {
     public static void quickSort(int[] arr,int low,int high){
         if(low < high){
             int p1 = partition(arr,low,high);
+            System.out.println("p1: " + p1);
             quickSort(arr,0,p1 - 1);
             quickSort(arr,p1 + 1,high);
         }
