@@ -141,7 +141,7 @@ class LinkedList{
             System.out.print(current.data + " -> ");
             current = current.next;
         }
-        System.out.print("null");
+        System.out.print("null\n");
     }
     int getSize(){
         Node current = head;
@@ -179,65 +179,33 @@ class LinkedList{
         return sorted;
     }
 }
-public class FirstProblem {
-    public static void main(String[] args){
+public class Sort {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
         LinkedList list = new LinkedList();
-        while(true){
-            Scanner obj = new Scanner(System.in);
-            System.out.print("\n1.Insert at begin 2.Insert at end 3.Insert by position 4.Delete by value 5.Delete by position 6.Delete at begin 7.Search 8.Reverse 9.Print the list 10.Exit\nEnter your choice: ");
-            int n = obj.nextInt();
-            switch(n){
+        while (true) {
+            System.out.print("1.Insert 2.Sort 3.Display 4.Exit\nEnter your choice: ");
+            int choice = obj.nextInt();
+            switch (choice) {
                 case 1:
-                    System.out.println("Enter the value: ");
+                    System.out.print("Enter the value: ");
                     int val = obj.nextInt();
-                    list.insertAtbegin(val);
-                    break;
-                case 2:
-                    System.out.println("Enter the value: ");
-                    val = obj.nextInt();
                     list.insertNode(val);
                     break;
+                case 2:
+                    list.sort();
+                    break;
                 case 3:
-                    System.out.println("Enter the value: ");
-                    val = obj.nextInt();
-                    System.out.println("Enter the position: ");
-                    int pos = obj.nextInt();
-                    if(list.getSize() < pos){
-                        System.out.println("Invalid Position!");
-                        break;
-                    }
-                    list.insertByPosition(val,pos);
-                    break;
-                case 4:
-                    System.out.println("Enter the value: ");
-                    val = obj.nextInt();
-                    list.deleteNode(val);
-                    break;
-                case 5:
-                    System.out.println("Enter the position: ");
-                    pos = obj.nextInt();
-                    list.deleteByPosition(pos);
-                    break;
-                case 6:
-                    list.deleteAtbegin();
-                    break;
-                case 7:
-                    System.out.println("Enter the value: ");
-                    val = obj.nextInt();
-                    list.searchNode(val);
-                    break;
-                case 8:
-                    list.reverseList();
-                    break;
-                case 9:
                     list.printList();
                     break;
-                case 10:
+                case 4:
+                    System.out.println("Exiting...");
                     obj.close();
-                    System.exit(0);
+                    return;
                 default:
-                    System.out.println("Invalid Choice!");
+                    System.out.println("Invalid choice, please try again.");
             }
         }
+        //obj.close();
     }
 }
