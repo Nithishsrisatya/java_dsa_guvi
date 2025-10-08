@@ -41,6 +41,12 @@ public class BSTTree {
         }
         return root;
     }
+    public Node findMax(Node root){
+        while(root.right !=  null){
+            root = root.right;
+        }
+        return root;
+    }
     public Node delete(Node root, int key){
         if(root == null)return null;
         if(key < root.data){
@@ -67,7 +73,7 @@ public class BSTTree {
         BSTTree tree = new BSTTree();
         tree.root = tree.buildTree();
         while(true){
-            System.out.println("\n1. Inorder Traversal \t 2. Search Key \t 3. Delete Key \t 4. Exit");
+            System.out.println("\n1. Inorder Traversal \t 2. Search Key \t 3. Delete Key \t 4. Find Minimum value \t 5. Find Maximum Value \t 6. Exit");
             int ch = obj.nextInt();
             switch(ch){
                 case 1: 
@@ -91,6 +97,14 @@ public class BSTTree {
                     System.out.println("Key " + val + " deleted");
                     break;
                 case 4:
+                     int min = tree.findMin(tree.root).data;
+                     System.out.println("Minimum Value: " + min);
+                     break;
+                case 5:
+                     int max = tree.findMax(tree.root).data;
+                     System.out.println("Maximum Value: " + max);
+                     break;
+                case 6:
                     System.exit(0);
                     break;
                 default:
